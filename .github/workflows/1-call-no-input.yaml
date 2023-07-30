@@ -1,0 +1,17 @@
+# .github/workflows/1-call-no-input.yaml
+name: 1 call no input
+
+on: [workflow_dispatch]
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       my-input:
+#           description: 'Branch/tag/hash to build'
+#           required: true
+#           default: 'default input value'
+
+jobs:
+  call-reusable-workflow:
+    uses: nif2-org/01-nif2-org-pub-reusable-repo1/.github/workflows/pub-reusable.yaml@master
+    with:
+      my-input: "Default input value"

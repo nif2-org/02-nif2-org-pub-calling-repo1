@@ -1,0 +1,20 @@
+
+
+
+# .github/workflows/2-call-input.yaml
+name: 2 call input
+
+# on: [workflow_dispatch]
+on:
+  workflow_dispatch:
+    inputs:
+      my-input:
+          description: 'Branch/tag/hash to build'
+          required: true
+          default: 'default input value'
+
+jobs:
+  call-reusable-workflow:
+    uses: niftyworx01/02-gha-reusable/.github/workflows/my-reusable-workflow.yaml@master
+    with:
+      my-input:  ${{ inputs.my-input }}
