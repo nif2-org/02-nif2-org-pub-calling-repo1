@@ -6,6 +6,6 @@ on:
 jobs:
   Hello-World-Job:
     runs-on:
-      - codebuild-poc7-${{ github.run_id }}-${{ github.run_attempt }}
+      - codebuild-poc8-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - run: echo "Hello World"
