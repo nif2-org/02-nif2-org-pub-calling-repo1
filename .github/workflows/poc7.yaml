@@ -1,5 +1,9 @@
 name: Hello World
-on: [push]
+
+on:
+  push:
+  workflow_dispatch:
+
 jobs:
   Hello-World-Job:
     runs-on:
