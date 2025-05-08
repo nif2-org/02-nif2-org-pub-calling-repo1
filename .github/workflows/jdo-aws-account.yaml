@@ -1,5 +1,5 @@
 name: Hello World - jdo-poc9
-on: [workflow_dispatch]
+on: [push]
 jobs:
   Hello-World-Job:
     runs-on:
