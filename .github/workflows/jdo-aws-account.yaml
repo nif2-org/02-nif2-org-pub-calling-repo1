@@ -3,6 +3,6 @@ on: [push, workflow_dispatch]
 jobs:
   Hello-World-Job:
     runs-on:
-      - codebuild-pocb-${{ github.run_id }}-${{ github.run_attempt }}
+      - codebuild-jdo1-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - run: echo "Hello World"
